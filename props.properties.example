@@ -1,0 +1,38 @@
+# Username for the RMQ connection
+username=
+
+# Password for the RMQ connection
+password=
+
+# RMQ port to connect on
+port=5672
+
+# RMQ hostname to connect to
+hostname=localhost
+
+# RMQ vHost (optional)
+vhost=
+
+# LogLevel for the app, options are:
+# TRACE, DEBUG, INFO, WARN, ERROR, FATAL
+loglevel=INFO
+
+# True to create a producer, false to not send data to RMQ
+producer=true
+
+# True to create a consumer, false to not consume data from RMQ
+consumer=true
+
+# Number of consumers to create
+# WARNING: each consumer uses a thread, be careful!!!!
+numberOfConsumers=1
+
+# Number of producers to create
+# WARNING: each producer uses a thread, be careful!!!!
+numberOfProducers=1
+
+# Rate (in ms) between message production.
+producerMessageRate=1000
+
+# Size (in bytes) of each message sent by the producer.
+producerMessageSize=1000
