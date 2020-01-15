@@ -163,8 +163,8 @@ public class StatsInfo {
 		Mem mem = sigar.getMem();
 		NetStat netStat = sigar.getNetStat();
 		this.cpuMemNetOut.i("%-6s | %-8s | %-8s | %-10s | %-13s | %-6s | %-7s",
-				String.format("%1$.3f%%", sigar.getCpuPerc().getCombined()), sigar.formatSize(mem.getActualUsed()),
-				sigar.formatSize(mem.getTotal()), String.format("%1$.2f%%", mem.getUsedPercent()),
+				String.format("%1$.3f%%", sigar.getCpuPerc().getCombined()), Sigar.formatSize(mem.getActualUsed()),
+				Sigar.formatSize(mem.getTotal()), String.format("%1$.2f%%", mem.getUsedPercent()),
 				netStat.getTcpBound(), netStat.getAllInboundTotal(), netStat.getAllOutboundTotal());
 	}
 

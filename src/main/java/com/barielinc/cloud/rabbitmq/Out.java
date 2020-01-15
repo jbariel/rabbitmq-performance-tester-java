@@ -11,8 +11,8 @@ import org.apache.commons.lang3.StringUtils;
 public class Out {
 
 	protected enum LogLevel {
-		TRACE(0, "TRACE"), DEBUG(10, "DEBUG"), INFO(20, "INFO"), WARN(30, "WARN"), ERROR(40, "ERROR"), FATAL(50,
-				"FATAL");
+		TRACE(0, "TRACE"), DEBUG(10, "DEBUG"), INFO(20, "INFO"), WARN(30, "WARN"), ERROR(40, "ERROR"),
+		FATAL(50, "FATAL");
 
 		int value;
 		String name;
